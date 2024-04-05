@@ -1,14 +1,13 @@
-function indigo(){
-    document.getElementById("div").style.backgroundColor = "#7289DA";
-    document.getElementById("div").style.color = "white";
+function buttonclick(val){
+    document.getElementById("output").value+=val
 }
 
-function cyan(){
-    document.getElementById("div").style.backgroundColor = "#00FFFF";
-    document.getElementById("div").style.color = "black";
+function clears(){
+    document.getElementById("output").value=""
 }
 
-function teal(){
-    document.getElementById("div").style.backgroundColor = "#008080";
-    document.getElementById("div").style.color = "white";
+function equalClick1(){
+    const txt = document.getElementById("output").value
+    var result=eval(txt)
+    document.getElementById('output').value=result
 }
